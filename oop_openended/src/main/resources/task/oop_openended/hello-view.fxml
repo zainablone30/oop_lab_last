@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="task.oop_openended.HelloController">
+   <children>
+      <Text layoutX="339.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEMS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <TextField fx:id="product_name" alignment="CENTER" layoutX="319.0" layoutY="122.0" promptText="enter product name" />
+      <TextField fx:id="product_id" alignment="CENTER" layoutX="319.0" layoutY="161.0" promptText="enter product id" />
+      <TextField fx:id="product_price" alignment="CENTER" layoutX="319.0" layoutY="197.0" promptText="enter product price" />
+      <Button fx:id="ADD_button" layoutX="229.0" layoutY="272.0" mnemonicParsing="false" onAction="#ADD_handler" text="ADD" />
+      <Button fx:id="remove_button" layoutX="309.0" layoutY="272.0" mnemonicParsing="false" onAction="#remove_handler" text="Remove" />
+      <Button fx:id="edit_button" layoutX="394.0" layoutY="272.0" mnemonicParsing="false" onAction="#edit_handler" text="Edit" />
+      <TilePane fx:id="tilePane" layoutX="12.0" layoutY="369.0" prefHeight="279.0" prefWidth="481.0" />
+      <TableView fx:id="product_table" layoutX="554.0" layoutY="394.0" prefHeight="200.0" prefWidth="315.0">
+        <columns>
+          <TableColumn fx:id="id_table_view" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="name_column" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="price_column" prefWidth="75.0" text="price" />
+            <TableColumn fx:id="link_column" prefWidth="75.0" text="link" />
+        </columns>
+      </TableView>
+      <TextField fx:id="product_image_link" alignment="CENTER" layoutX="319.0" layoutY="235.0" promptText="enter product link" />
+      <Text layoutX="218.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name" />
+      <Text layoutX="218.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter id" />
+      <Text layoutX="218.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Price" />
+      <Text layoutX="199.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter link of image" />
+   </children>
+</AnchorPane>
